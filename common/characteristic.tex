@@ -95,7 +95,7 @@
 {\contribution} Автор принимал активное участие \ldots
 
 \ifnumequal{\value{bibliosel}}{0}
-{%%% Встроенная реализация с загрузкой файла через движок bibtex8. (При желании, внутри можно использовать обычные ссылки, наподобие `\cite{vakbib1,vakbib2}`).
+{%%% Встроенная реализация с загрузкой файла через движок bibtex8. (При желании, внутри можно использовать обычные ссылки, наподобие `\cite{scopus_rvect,scopus_voices}`).
     {\publications} Основные результаты по теме диссертации изложены
     в~XX~печатных изданиях,
     X из которых изданы в журналах, рекомендованных ВАК,
@@ -164,11 +164,14 @@
         % Процитированные здесь работы:
         %  * попадают в авторскую библиографию, при usefootcite==0 и стиле `\insertbiblioauthorimportant`.
         %  * ни на что не влияют в противном случае
-        \nocite{vakbib2}%vak
-        \nocite{patbib1}%patent
-        \nocite{progbib1}%program
-        \nocite{bib1}%other
-        \nocite{confbib1}%conf
+        \nocite{scopus_rvect}
+        \nocite{scopus_voices}
+        \nocite{scopus_arch}
+        \nocite{rinz_globalindex}
+        \nocite{rinz_asrgpu}
+        \nocite{rinz_asrflow}
+        \nocite{rinz_vectsearch}
+        \nocite{rinz_sasearch}
     \end{refsection}%
         %
         % Всё, что вне этих двух refsection, это refsection=0,

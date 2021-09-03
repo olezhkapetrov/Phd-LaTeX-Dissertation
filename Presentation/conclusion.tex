@@ -49,25 +49,22 @@
     Получен акт о внедрении.
 }
 
-\begin{frame} % публикации на одной странице
-% \begin{frame}[t,allowframebreaks] % публикации на нескольких страницах
+% \begin{frame} % публикации на одной странице
+\begin{frame}[t,allowframebreaks] % публикации на нескольких страницах
     \frametitle{Основные публикации}
-    \nocite{vakbib1}%
-    \nocite{vakbib2}%
-    %
-    %% authorwos
-    \nocite{wosbib1}%
-    %
-    %% authorscopus
-    \nocite{scbib1}%
-    %
-    %% authorconf
-    \nocite{confbib1}%
-    \nocite{confbib2}%
-    %
-    %% authorother
-    \nocite{bib1}%
-    \nocite{bib2}%
+
+    % authorscopus
+    \nocite{scopus_rvect}
+    \nocite{scopus_voices}
+    \nocite{scopus_arch}
+
+    % authorother
+    \nocite{rinz_globalindex}
+    \nocite{rinz_asrgpu}
+    \nocite{rinz_asrflow}
+    \nocite{rinz_vectsearch}
+    \nocite{rinz_sasearch}
+
     \ifnumequal{\value{bibliosel}}{0}{
         \insertbiblioauthor
     }{
